@@ -63,15 +63,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				fitness: {
-					blue: '#1e40af',
-					'blue-light': '#3b82f6',
-					green: '#059669',
-					'green-light': '#10b981',
-					orange: '#ea580c',
-					'orange-light': '#f97316',
-					purple: '#7c3aed',
-					'purple-light': '#8b5cf6'
+				soft: {
+					blue: '#6366f1',
+					'blue-light': '#a5b4fc',
+					cyan: '#06b6d4',
+					'cyan-light': '#67e8f9',
+					purple: '#8b5cf6',
+					'purple-light': '#c4b5fd',
+					amber: '#f59e0b',
+					'amber-light': '#fcd34d',
+					emerald: '#10b981',
+					'emerald-light': '#6ee7b7',
+					rose: '#f43f5e',
+					'rose-light': '#fda4af',
+					slate: '#64748b',
+					'slate-light': '#cbd5e1'
 				}
 			},
 			borderRadius: {
@@ -106,14 +112,14 @@ export default {
 						transform: 'translateY(0)'
 					}
 				},
-				'pulse-strong': {
+				'pulse-soft': {
 					'0%, 100%': {
 						transform: 'scale(1)',
 						opacity: '1'
 					},
 					'50%': {
-						transform: 'scale(1.05)',
-						opacity: '0.8'
+						transform: 'scale(1.02)',
+						opacity: '0.95'
 					}
 				}
 			},
@@ -121,7 +127,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.3s ease-out',
-				'pulse-strong': 'pulse-strong 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+				'pulse-soft': 'pulse-soft 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
 			}
 		}
 	},

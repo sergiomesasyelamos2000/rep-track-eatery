@@ -8,8 +8,8 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="min-h-screen bg-gray-50 pb-20">
-      <main className="max-w-md mx-auto bg-white min-h-screen shadow-xl">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100 pb-20">
+      <main className="max-w-md mx-auto bg-white min-h-screen card-shadow-lg">
         {children}
       </main>
       <Navigation />
