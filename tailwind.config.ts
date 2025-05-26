@@ -63,21 +63,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				soft: {
-					blue: '#6366f1',
-					'blue-light': '#a5b4fc',
-					cyan: '#06b6d4',
-					'cyan-light': '#67e8f9',
-					purple: '#8b5cf6',
-					'purple-light': '#c4b5fd',
-					amber: '#f59e0b',
-					'amber-light': '#fcd34d',
-					emerald: '#10b981',
-					'emerald-light': '#6ee7b7',
-					rose: '#f43f5e',
-					'rose-light': '#fda4af',
-					slate: '#64748b',
-					'slate-light': '#cbd5e1'
+				// Nueva paleta cálida y natural
+				warm: {
+					sage: '#87A96B',
+					'sage-light': '#B5D6A3',
+					olive: '#6B7B3F',
+					'olive-light': '#9DAD6B',
+					terracotta: '#C17767',
+					'terracotta-light': '#E09A88',
+					cream: '#F5F1E8',
+					'cream-dark': '#E8E0D1',
+					gold: '#D4AF37',
+					'gold-light': '#E8C547',
+					earth: '#8B7355',
+					'earth-light': '#B19A7D'
 				}
 			},
 			borderRadius: {
