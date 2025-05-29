@@ -5,83 +5,83 @@
 
 @layer base {
   :root {
-    --background: 245 241 232;
-    --foreground: 75 85 99;
+    --background: 248 250 252;
+    --foreground: 15 23 42;
 
     --card: 255 255 255;
-    --card-foreground: 75 85 99;
+    --card-foreground: 15 23 42;
 
     --popover: 255 255 255;
-    --popover-foreground: 75 85 99;
+    --popover-foreground: 15 23 42;
 
-    --primary: 135 169 107;
-    --primary-foreground: 255 255 255;
+    --primary: 30 64 175;
+    --primary-foreground: 248 250 252;
 
-    --secondary: 232 224 209;
-    --secondary-foreground: 139 115 85;
+    --secondary: 241 245 249;
+    --secondary-foreground: 15 23 42;
 
-    --muted: 248 245 240;
-    --muted-foreground: 120 113 108;
+    --muted: 241 245 249;
+    --muted-foreground: 100 116 139;
 
-    --accent: 193 119 103;
-    --accent-foreground: 255 255 255;
+    --accent: 241 245 249;
+    --accent-foreground: 15 23 42;
+
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 250 252;
+
+    --border: 226 232 240;
+    --input: 226 232 240;
+    --ring: 30 64 175;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 255 255 255;
+    --sidebar-foreground: 15 23 42;
+    --sidebar-primary: 30 64 175;
+    --sidebar-primary-foreground: 248 250 252;
+    --sidebar-accent: 241 245 249;
+    --sidebar-accent-foreground: 15 23 42;
+    --sidebar-border: 226 232 240;
+    --sidebar-ring: 30 64 175;
+  }
+
+  .dark {
+    --background: 2 6 23;
+    --foreground: 248 250 252;
+
+    --card: 2 6 23;
+    --card-foreground: 248 250 252;
+
+    --popover: 2 6 23;
+    --popover-foreground: 248 250 252;
+
+    --primary: 59 130 246;
+    --primary-foreground: 15 23 42;
+
+    --secondary: 30 41 59;
+    --secondary-foreground: 248 250 252;
+
+    --muted: 30 41 59;
+    --muted-foreground: 148 163 184;
+
+    --accent: 30 41 59;
+    --accent-foreground: 248 250 252;
 
     --destructive: 220 38 38;
     --destructive-foreground: 248 250 252;
 
-    --border: 228 218 208;
-    --input: 228 218 208;
-    --ring: 135 169 107;
+    --border: 30 41 59;
+    --input: 30 41 59;
+    --ring: 59 130 246;
 
-    --radius: 0.75rem;
-
-    --sidebar-background: 245 241 232;
-    --sidebar-foreground: 75 85 99;
-    --sidebar-primary: 135 169 107;
-    --sidebar-primary-foreground: 255 255 255;
-    --sidebar-accent: 232 224 209;
-    --sidebar-accent-foreground: 139 115 85;
-    --sidebar-border: 228 218 208;
-    --sidebar-ring: 135 169 107;
-  }
-
-  .dark {
-    --background: 41 37 36;
-    --foreground: 245 241 232;
-
-    --card: 68 64 60;
-    --card-foreground: 245 241 232;
-
-    --popover: 68 64 60;
-    --popover-foreground: 245 241 232;
-
-    --primary: 181 214 163;
-    --primary-foreground: 41 37 36;
-
-    --secondary: 87 83 78;
-    --secondary-foreground: 228 218 208;
-
-    --muted: 68 64 60;
-    --muted-foreground: 161 161 170;
-
-    --accent: 224 154 136;
-    --accent-foreground: 41 37 36;
-
-    --destructive: 185 28 28;
-    --destructive-foreground: 248 250 252;
-
-    --border: 87 83 78;
-    --input: 87 83 78;
-    --ring: 181 214 163;
-
-    --sidebar-background: 41 37 36;
-    --sidebar-foreground: 245 241 232;
-    --sidebar-primary: 181 214 163;
-    --sidebar-primary-foreground: 41 37 36;
-    --sidebar-accent: 87 83 78;
-    --sidebar-accent-foreground: 228 218 208;
-    --sidebar-border: 87 83 78;
-    --sidebar-ring: 181 214 163;
+    --sidebar-background: 2 6 23;
+    --sidebar-foreground: 248 250 252;
+    --sidebar-primary: 59 130 246;
+    --sidebar-primary-foreground: 15 23 42;
+    --sidebar-accent: 30 41 59;
+    --sidebar-accent-foreground: 248 250 252;
+    --sidebar-border: 30 41 59;
+    --sidebar-ring: 59 130 246;
   }
 }
 
@@ -97,27 +97,15 @@
 }
 
 @layer utilities {
-  .gradient-primary {
-    background: linear-gradient(135deg, #87A96B 0%, #B5D6A3 100%);
+  .gradient-fitness {
+    background: linear-gradient(135deg, #1e40af 0%, #059669 100%);
   }
   
-  .gradient-secondary {
-    background: linear-gradient(135deg, #C17767 0%, #E09A88 100%);
-  }
-  
-  .gradient-accent {
-    background: linear-gradient(135deg, #D4AF37 0%, #E8C547 100%);
+  .gradient-calories {
+    background: linear-gradient(135deg, #ea580c 0%, #7c3aed 100%);
   }
   
   .text-shadow {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-shadow {
-    box-shadow: 0 1px 3px 0 rgba(139, 115, 85, 0.1), 0 1px 2px 0 rgba(139, 115, 85, 0.06);
-  }
-  
-  .card-shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(139, 115, 85, 0.1), 0 4px 6px -2px rgba(139, 115, 85, 0.05);
   }
 }
